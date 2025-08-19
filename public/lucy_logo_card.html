@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lucy 2 Logo Card</title>
+  <style>
+    body {
+      background: radial-gradient(circle, #0f0f0f, #1a1a1a);
+      color: #e0e0e0;
+      font-family: 'Georgia', serif;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .logo-container {
+      margin-top: 2rem;
+    }
+
+    .pulse-logo {
+      width: 120px;
+      animation: pulse 3s infinite ease-in-out;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); opacity: 0.8; }
+      50% { transform: scale(1.1); opacity: 1; }
+      100% { transform: scale(1); opacity: 0.8; }
+    }
+
+    .tagline {
+      font-size: 1.4rem;
+      margin-top: 1rem;
+      font-style: italic;
+      color: #f0c674;
+    }
+
+    .elements {
+      margin-top: 2rem;
+      font-size: 1.2rem;
+    }
+
+    .elements span {
+      margin: 0 12px;
+      display: inline-block;
+    }
+
+    footer {
+      margin-top: 2rem;
+      font-size: 1rem;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <h1>Lucy 2</h1>
+  <p class="tagline">Where Data Becomes Dharma</p>
+
+  <div class="logo-container">
+    <img src="lucy_logo.svg" class="pulse-logo" alt="Lucy 2 Logo">
+  </div>
+
+  <div class="elements">
+    <span>🌬️ Air (RSI)</span>
+    <span>🔥 Fire (MACD)</span>
+    <span>🌊 Water (VIX)</span>
+    <span>🌍 Earth (Sector)</span>
+  </div>
+
+  <footer>
+    <em>Awaken the dashboard. Awaken the self.</em>
+  </footer>
+</body>
+</html>
