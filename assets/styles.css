@@ -1,0 +1,98 @@
+/* === Lucy 2 Dashboard Theme === */
+
+/* Global Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Orbitron', sans-serif;
+    background: linear-gradient(135deg, #0F0F0F, #1E1E2F);
+    color: #F5F5F5;
+}
+
+/* Streamlit Main Container */
+.stApp {
+    background: linear-gradient(to bottom right, #1E1E2F, #0F0F0F);
+    padding: 1rem;
+}
+
+/* Header Banner */
+.header {
+    background: linear-gradient(to right, #6A5ACD, #00CED1);
+    padding: 1.2rem;
+    border-radius: 12px;
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    box-shadow: 0 0 20px #6A5ACD;
+}
+
+/* Sidebar Styling */
+.css-1d391kg {
+    background-color: #1C1C2E !important;
+    color: #F5F5F5;
+}
+
+/* Buttons */
+button {
+    background-color: #FF6F61;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 0.6rem 1.2rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #FF8C75;
+    box-shadow: 0 0 10px #FF6F61;
+}
+
+/* Dropdowns */
+select {
+    background-color: #2A2A3C;
+    color: #F5F5F5;
+    border-radius: 6px;
+    padding: 0.5rem;
+    border: 1px solid #444;
+}
+
+/* Charts Container */
+.chart-box {
+    background-color: #1E1E2F;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 0 15px rgba(106, 90, 205, 0.3);
+}
+
+/* Lore Text */
+.lore-text {
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 1.1rem;
+    color: #FFD700;
+    text-shadow: 0 0 5px #8B0000;
+    margin-top: 1rem;
+    padding: 0.5rem;
+}
+
+/* Tab Titles */
+h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.8rem;
+    color: #00CED1;
+    border-bottom: 2px solid #6A5ACD;
+    padding-bottom: 0.3rem;
+    margin-bottom: 1rem;
+}
+
+/* Animations */
+@keyframes pulseGlow {
+    0% { box-shadow: 0 0 5px #6A5ACD; }
+    50% { box-shadow: 0 0 20px #00CED1; }
+    100% { box-shadow: 0 0 5px #6A5ACD; }
+}
+
+.pulsing {
+    animation: pulseGlow 2s infinite;
+}

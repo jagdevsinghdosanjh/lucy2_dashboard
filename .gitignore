@@ -1,0 +1,18 @@
+# Python artifacts
+__pycache__/
+*.pyc
+
+# Virtual environment
+venv/
+
+# Secrets and keys
+.env
+
+# Logs and temp
+*.log
+*.tmp
+
+# OS clutter
+.DS_Store
+Thumbs.db
+.streamlit
