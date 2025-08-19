@@ -1,0 +1,7 @@
+{
+  "Technology": { "element": "Fire", "symbol": "🔥", "color": "#FF4500" },
+  "Healthcare": { "element": "Water", "symbol": "💧", "color": "#1E90FF" },
+  "Finance": { "element": "Earth", "symbol": "🌍", "color": "#228B22" },
+  "Energy": { "element": "Air", "symbol": "🌬️", "color": "#B0E0E6" },
+  "Consumer Staples": { "element": "Ether", "symbol": "✨", "color": "#9370DB" }
+}

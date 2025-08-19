@@ -1,0 +1,164 @@
+
+[     UTC     ] Logs for lucy2dashboard-by-jagdevsinghdosanjh.streamlit.app/
+────────────────────────────────────────────────────────────────────────────────────────
+[20:06:34] 🖥 Provisioning machine...
+[20:06:34] 🎛 Preparing system...
+[20:06:34] ⛓ Spinning up manager process...
+[20:06:35] 🚀 Starting up repository: 'lucy2_dashboard', branch: 'main', main module: 'app.py'
+[20:06:35] 🐙 Cloning repository...
+[20:06:37] 🐙 Cloning into '/mount/src/lucy2_dashboard'...
+Warning: Permanently added the ED25519 host key for IP address '140.82.116.3' to the list of known hosts.
+
+[20:06:37] 🐙 Cloned repository!
+[20:06:37] 🐙 Pulling code changes from Github...
+[20:06:38] 📦 Processing dependencies...
+
+──────────────────────────────────────── uv ───────────────────────────────────────────
+
+Using uv pip install.
+Using Python 3.13.5 environment at /home/adminuser/venv
+Resolved 51 packages in 1.22s
+Prepared 51 packages in 1.67s
+Installed 51 packages in 90ms
+ + altair==5.5.0
+ + attrs==25.3.0
+ + beautifulsoup4==4.13.4
+ + blinker==1.9.0
+ + cachetools==6.1.0
+ + certifi==2025.8.3
+ + cffi==1.17.1
+ + charset-normalizer==3.4.3
+ + click==8.2.1
+ + curl-cffi==0.13.0
+ + frozendict==[2025-08-19 20:06:41.903171] 2.4.6
+ + gitdb==4.0.12
+ + gitpython==3.1.45
+ + idna==3.10
+ + jinja2==3.1.6
+ + jsonschema==4.25.1
+ + jsonschema-specifications==2025.4.1
+ + markupsafe==[2025-08-19 20:06:41.903366] 3.0.2
+ + multitasking==0.0.12
+ + narwhals==2.1.2
+ + numpy==2.3.2
+ + packaging==25.0
+ + pandas==2.3.1[2025-08-19 20:06:41.903561] 
+ + peewee==3.18.2
+ + pillow==11.3.0
+ + platformdirs==4.3.8
+ + plotly==6.3.0
+ + protobuf==6.32.0
+ [2025-08-19 20:06:41.903761] + pyarrow==21.0.0
+ + pycparser==2.22
+ + pydeck==0.9.1
+ + python-dateutil==2.9.0.post0
+ + python-dotenv==1.1.1[2025-08-19 20:06:41.903939] 
+ + pytz==2025.2
+ + referencing==0.36.2
+ + requests==2.32.5
+ + rpds-py==0.27.0
+ +[2025-08-19 20:06:41.904112]  six==1.17.0
+ + smmap==5.0.2
+ + soupsieve==2.7
+ + streamlit==1.48.1
+ + ta[2025-08-19 20:06:41.904265] ==0.11.0
+ + tenacity==9.1.2
+ + toml==0.10.2
+ + tornado==6.5.2
+ + typing-extensions==4.14.1
+ [2025-08-19 20:06:41.904420] + tzdata==2025.2
+ + urllib3==2.5.0
+ + watchdog==6.0.0
+ + websockets==15.0.1
+ + [2025-08-19 20:06:41.904578] yfinance==0.2.65
+Checking if Streamlit is installed
+Found Streamlit version 1.48.1 in the environment
+Installing rich for an improved exception logging
+Using uv pip install.
+Using Python 3.13.5 environment at /home/adminuser/venv
+Resolved 4 packages in 121ms
+Prepared 4 packages in 93ms
+Installed 4 packages in 11ms
+ + markdown-it-py==4.0.0
+ + mdurl==0.1.2
+ + pygments==2.19.2
+ + rich==14.1.0
+
+────────────────────────────────────────────────────────────────────────────────────────
+
+[20:06:43] 🐍 Python dependencies were installed from /mount/src/lucy2_dashboard/requirements.txt using uv.
+Check if streamlit is installed
+Streamlit is already installed
+[20:06:45] 📦 Processed dependencies!
+
+
+
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/threading.py", line 1043, in _bootstrap_inner
+    self.run()
+    ~~~~~~~~^^
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/api.py", line 213, in run
+    self.dispatch_events(self.event_queue)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/api.py", line 391, in dispatch_events
+    handler.dispatch(event)
+    ~~~~~~~~~~~~~~~~^^^^^^^
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/events.py", line 217, in dispatch
+    getattr(self, f"on_{event.event_type}")(event)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "/home/adminuser/venv/lib/python3.13/site-packages/streamlit/watcher/event_based_path_watcher.py", line 458, in on_moved
+    self.handle_path_change_event(event)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "/home/adminuser/venv/lib/python3.13/site-packages/streamlit/watcher/event_based_path_watcher.py", line 442, in handle_path_change_event
+    changed_path_info.on_changed.send(abs_changed_path)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/home/adminuser/venv/lib/python3.13/site-packages/blinker/base.py", line 249, in send
+    result = receiver(sender, **kwargs)
+  File "/home/adminuser/venv/lib/python3.13/site-packages/streamlit/watcher/local_sources_watcher.py", line 119, in on_path_changed
+    for watched_path in self._watched_modules:
+                        ^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: dictionary changed size during iteration
+⚠️ Polygon failed for XOM: 401 Client Error: Unauthorized for url: https://api.polygon.io/v2/aggs/ticker/XOM/range/1/day/2025-07-20/2025-08-19?adjusted=true&sort=asc&apiKey=RHZUK2NY8RJ8AQSO
+⚠️ Failed to log key error: [Errno 2] No such file or directory: 'logs/key_failures.log'
+⚠️ AlphaVantage failed for XOM: AlphaVantage returned no time series
+⚠️ Failed to log key error: [Errno 2] No such file or directory: 'logs/key_failures.log'
+⚠️ Polygon failed for AAPL: 401 Client Error: Unauthorized for url: https://api.polygon.io/v2/aggs/ticker/AAPL/range/1/day/2025-07-20/2025-08-19?adjusted=true&sort=asc&apiKey=RHZUK2NY8RJ8AQSO
+⚠️ Failed to log key error: [Errno 2] No such file or directory: 'logs/key_failures.log'
+⚠️ AlphaVantage failed for AAPL: AlphaVantage returned no time series
+⚠️ Failed to log key error: [Errno 2] No such file or directory: 'logs/key_failures.log'
+⚠️ Polygon failed for MSFT: 401 Client Error: Unauthorized for url: https://api.polygon.io/v2/aggs/ticker/MSFT/range/1/day/2025-07-20/2025-08-19?adjusted=true&sort=asc&apiKey=RHZUK2NY8RJ8AQSO
+⚠️ Failed to log key error: [Errno 2] No such file or directory: 'logs/key_failures.log'
+⚠️ AlphaVantage failed for MSFT: AlphaVantage returned no time series
+⚠️ Failed to log key error: [Errno 2] No such file or directory: 'logs/key_failures.log'
+⚠️ Polygon failed for GOOGL: 401 Client Error: Unauthorized for url: https://api.polygon.io/v2/aggs/ticker/GOOGL/range/1/day/2025-07-20/2025-08-19?adjusted=true&sort=asc&apiKey=RHZUK2NY8RJ8AQSO
+⚠️ Failed to log key error: [Errno 2] No such file or directory: 'logs/key_failures.log'
+⚠️ AlphaVantage failed for GOOGL: AlphaVantage returned no time series
+⚠️ Failed to log key error: [Errno 2] No such file or directory: 'logs/key_failures.log'
+⚠️ Polygon failed for TSLA: 401 Client Error: Unauthorized for url: https://api.polygon.io/v2/aggs/ticker/TSLA/range/1/day/2025-07-20/2025-08-19?adjusted=true&sort=asc&apiKey=RHZUK2NY8RJ8AQSO
+⚠️ Failed to log key error: [Errno 2] No such file or directory: 'logs/key_failures.log'
+⚠️ AlphaVantage failed for TSLA: AlphaVantage returned no time series
+⚠️ Failed to log key error: [Errno 2] No such file or directory: 'logs/key_failures.log'
+────────────────────── Traceback (most recent call last) ───────────────────────
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+  nner/exec_code.py:128 in exec_func_with_error_handling                        
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+  nner/script_runner.py:667 in code_to_exec                                     
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+  nner/script_runner.py:165 in _mpa_v1                                          
+                                                                                
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/navigation/page.  
+  py:300 in run                                                                 
+                                                                                
+  /mount/src/lucy2_dashboard/pages/4_Quantum_Merge.py:2 in <module>             
+                                                                                
+     1 import streamlit as st                                                   
+  ❱  2 from features.indicators import get_rsi, get_macd, get_vix               
+     3 from features.lore_engine import render_lore                             
+     4                                                                          
+     5 def quantum_merge(ticker):                                               
+────────────────────────────────────────────────────────────────────────────────
+ImportError: cannot import name 'get_rsi' from 'features.indicators' 
+(/mount/src/lucy2_dashboard/features/indicators.py)
