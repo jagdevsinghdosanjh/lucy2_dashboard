@@ -4,13 +4,10 @@ from components.sector_selector import render_sector_selector
 from components.chart_renderer import render_charts
 from features.lore_engine import render_lore
 from features.log_setup import initialize_logs
-from features.style_manager import apply_all_styles  # 🆕 Inject fonts + symbolic CSS
 
 # 🔧 Initialize logging system
 initialize_logs()
 
-# 🎨 Apply symbolic styles and fonts
-apply_all_styles()
 
 # === Page Config ===
 st.set_page_config(
@@ -19,6 +16,14 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="collapsed"
 )
+
+# === Load Custom CSS & Fonts ===
+st.markdown("""
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Cinzel+Decorative&display=swap" rel="stylesheet">
+    <style>
+        @import url('assets/styles.css');
+    </style>
+""", unsafe_allow_html=True)
 
 # === Header Banner ===
 render_header("Lucy 2: Symbolic Market Dashboard")
