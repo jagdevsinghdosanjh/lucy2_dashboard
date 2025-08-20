@@ -1,18 +1,22 @@
-import os
 import datetime
 import streamlit as st
 
-# === Load Keys Securely ===
-# Prefer secrets manager; fallback to environment variables (comma-separated)
-POLYGON_KEYS = st.secrets["api_keys"].get("POLYGON_API_KEYS", os.getenv("POLYGON_API_KEYS", "")).split(",")
-ALPHAVANTAGE_KEYS = st.secrets["api_keys"].get("ALPHAVANTAGE_API_KEYS", os.getenv("ALPHAVANTAGE_API_KEYS", "")).split(",")
-
-# === Rotation Strategy ===
+# === API Key Rotation Logic ===
 def get_rotating_key(key_list):
-    if not key_list:
-        return None
     day = datetime.datetime.now().day
     return key_list[day % len(key_list)]
+
+# === Polygon Keys ===
+POLYGON_KEYS = [
+    st.secrets["api_keys"].get("POLYGON_API_KEY1", "Qr1E6i3PdteQk1HEVF8TmCDqPqXLknwn"),
+    st.secrets["api_keys"].get("POLYGON_API_KEY2", "kaUZ2wiN5pUFJVudYr8f_s1Gao3dp5y2")
+]
+
+# === AlphaVantage Keys ===
+ALPHAVANTAGE_KEYS = [
+    st.secrets["api_keys"].get("ALPHAVANTAGE_API_KEY1", "demo"),
+    st.secrets["api_keys"].get("ALPHAVANTAGE_API_KEY2", "your-second-alphavantage-key")
+]
 
 # === Final Key Selection ===
 POLYGON_API_KEY = st.secrets["api_keys"].get("POLYGON_API_KEY", get_rotating_key(POLYGON_KEYS))

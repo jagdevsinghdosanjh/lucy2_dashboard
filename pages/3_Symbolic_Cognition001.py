@@ -12,7 +12,6 @@ def config_card():
     st.markdown("## 🧠 Symbolic Cognition Settings")
     st.markdown("Tune Lucy 2’s expressive breath and overlays:")
 
-    # Display toggles (read-only for now, but can be made interactive later)
     st.toggle("🌌 Elemental Overlays", value=ENABLE_ELEMENTAL_OVERLAYS, disabled=True, help="Infuse sector tabs with elemental archetypes")
     st.toggle("📜 Lore Engine", value=ENABLE_LORE_ENGINE, disabled=True, help="Render poetic commentary based on indicators")
     st.toggle("💨 Breath Animation", value=ENABLE_BREATH_ANIMATION, disabled=True, help="Animate UI elements based on RSI and cycles")
