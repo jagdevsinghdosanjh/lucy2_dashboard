@@ -1,14 +1,10 @@
 import streamlit as st
-from components.startup_animation import show_startup_animation  # 🌀 Lucy's entrance
 from components.header import render_header
 from components.sector_selector import render_sector_selector
 from components.chart_renderer import render_charts
 from features.lore_engine import render_lore
 from features.log_setup import initialize_logs
 from features.style_manager import apply_all_styles  # 🆕 Inject fonts + symbolic CSS
-
-# 🌀 Optional: Lucy Awakens Animation
-show_startup_animation()
 
 # 🔧 Initialize logging system
 initialize_logs()
