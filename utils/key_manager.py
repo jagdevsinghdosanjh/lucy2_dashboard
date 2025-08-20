@@ -1,6 +1,6 @@
 import datetime
 import streamlit as st
-from config import ENABLE_ELEMENTAL_OVERLAYS, ENABLE_LORE_ENGINE, ENABLE_BREATH_ANIMATION
+from utils.config import ENABLE_ELEMENTAL_OVERLAYS, ENABLE_LORE_ENGINE, ENABLE_BREATH_ANIMATION
 
 # === Safe Access to Secrets ===
 def get_api_keys():

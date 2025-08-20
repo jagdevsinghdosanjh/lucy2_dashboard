@@ -1,6 +1,7 @@
 import streamlit as st
 import html
-from config.symbols import GURUBANI_OVERLAYS, ELEMENTAL_MAP
+from symbolic_config.symbols import GURUBANI_OVERLAYS, ELEMENTAL_MAP
+
 
 def get_lore_text(ticker, indicator_type="RSI", value=None):
     safe_ticker = html.escape(ticker)

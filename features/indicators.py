@@ -1,4 +1,4 @@
-import pandas as pd
+import pandas as pd # noqa
 
 def compute_fibonacci_levels(df):
     high = df['high'].max()

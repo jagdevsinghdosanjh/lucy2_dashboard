@@ -1,5 +1,5 @@
 import streamlit as st
-from config import (
+from utils.config import (
     POLYGON_API_KEY,
     ALPHAVANTAGE_API_KEY,
     ENABLE_ELEMENTAL_OVERLAYS,
