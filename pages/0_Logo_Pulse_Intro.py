@@ -34,6 +34,7 @@ html_code = f"""
   </head>
   <body>
     Hai! Welcome to Dashboard Pulse
+    <image src="lucy_logo_card.png"/>
   </body>
 </html>
 """
