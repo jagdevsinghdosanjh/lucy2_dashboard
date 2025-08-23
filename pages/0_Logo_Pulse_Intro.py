@@ -33,7 +33,7 @@ html_code = f"""
     </style>
   </head>
   <body>
-    <img src="logo.png" id="logo" />
+    <img src="lucy_logo_card.png" id="logo" />
   </body>
 </html>
 """
