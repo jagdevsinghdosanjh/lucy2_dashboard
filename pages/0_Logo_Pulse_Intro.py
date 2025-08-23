@@ -42,7 +42,7 @@ html_code = f"""
   </head>
   <body>
     <h2>Welcome to <span style="color:#00ffe0;">Dashboard Pulse</span></h2>
-    <img id="logo" src="lucy_logo_card.png" alt="Lucy Logo" />
+    <img id="logo" src="./lucy_logo_card.png" alt="Lucy Logo" />
   </body>
 </html>
 """
