@@ -1,5 +1,6 @@
 import streamlit.components.v1 as components
 
+
 #components.html(open("public/logo_pulse.html").read(), height=300)
 
 # Example dynamic values (replace with real-time indicators)
@@ -32,7 +33,7 @@ html_code = f"""
     </style>
   </head>
   <body>
-    <img src="./public/lucy_logo_card.png" id="logo" />
+    <img src="logo.png" id="logo" />
   </body>
 </html>
 """
