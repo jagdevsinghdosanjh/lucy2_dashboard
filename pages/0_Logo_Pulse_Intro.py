@@ -1,5 +1,7 @@
 import streamlit.components.v1 as components
 
+components.html(open("public/logo_pulse.html").read(), height=300)
+
 # Example dynamic values (replace with real-time indicators)
 vix = 18
 rsi = 65
