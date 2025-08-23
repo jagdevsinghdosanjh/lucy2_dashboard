@@ -1,18 +1,17 @@
 import streamlit.components.v1 as components
 
-# Dynamic indicator values (replace with real-time data as needed)
+
+#components.html(open("public/logo_pulse.html").read(), height=300)
+
+# Example dynamic values (replace with real-time indicators)
 vix = 18
 rsi = 65
 macd = 1.2
 macd_signal = 0.8
 
-# HTML + JS + CSS block
 html_code = f"""
-<!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <title>Dashboard Pulse</title>
     <script>
       window.vix = {vix};
       window.rsi = {rsi};
@@ -21,13 +20,6 @@ html_code = f"""
     </script>
     <script src="logo_pulse.js"></script>
     <style>
-      body {{
-        font-family: 'Segoe UI', sans-serif;
-        color: #ffffff;
-        background-color: #0f0f0f;
-        text-align: center;
-        padding-top: 20px;
-      }}
       #logo {{
         width: 140px;
         animation: breath 4s ease-in-out infinite;
@@ -41,11 +33,14 @@ html_code = f"""
     </style>
   </head>
   <body>
-    <h2>Welcome to <span style="color:#00ffe0;">Dashboard Pulse</span></h2>
-    <img id="logo" src="lucy_logo_card.png" alt="Lucy Logo" />
+    Hai! Welcome to Dashboard Pulse
+    <image src="lucy_logo_card.png"/>
   </body>
 </html>
 """
 
-# Render the HTML component
-components.html(html_code, height=320)
+components.html(html_code, height=300)
+
+# import streamlit.components.v1 as components
+
+# components.html(open("public/logo_pulse.html").read(), height=300)
